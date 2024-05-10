@@ -1,7 +1,7 @@
 component-definition:
   uuid: 8223d65f-57a9-4689-8f06-2a975ae2ad72
   metadata:
-    title: Test Component Definition
+    title: ECR Component Definition 
     last-modified: "2024-02-01T13:57:28.355446-04:00"
     version: "20231012"
     oscal-version: 1.1.2
@@ -12,8 +12,8 @@ component-definition:
   components:
     - uuid: b036a6ac-6cff-4066-92bc-74ddfd9ad6fa
       type: software
-      title: test component 1
-      description: This is a software component that implements basic authentication mechanisms.
+      title: ECR Component 
+      description: This is an ECR repository for storing container images 
       responsible-roles:
         - role-id: provider
           party-uuids:
@@ -21,10 +21,10 @@ component-definition:
       control-implementations:
         - uuid: cfcdd674-8595-4f98-a9d1-3ac70825c49f
           source: '#f52e1458-7a97-49fd-8189-6af6a4e7051b'
-          description: This is a partial implementation of the SP 800-53 rev4 catalog, focusing on the control enhancement AC-2 (3).
+          description: This is a partial implementation of the SP 800-53 rev5 catalog, focusing on the control enhancement CA-9.
           implemented-requirements:
-            - uuid: d1016df0-9b5c-4839-86cd-f9c1d113077b
-              control-id: ac-2.3
+            - uuid:  
+              control-id: ca-9 
               description: Inactive accounts are automatically disabled based on the duration specified by the duration parameter. Disabled accounts are expected to be reviewed and removed when appropriate.
         - uuid: 22dbff65-9729-449f-9dfc-4e5fee0906de
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
@@ -44,12 +44,9 @@ component-definition:
             media-type: application/oscal.catalog+json
           - href: ../../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_catalog.yaml
             media-type: application/oscal.catalog+yaml
+
       - uuid: ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8
-        description: FedRAMP Revision 4 High Baseline Profile
+        description: FedRAMP Revision 5 High Baseline Profile
         rlinks:
-          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev4/baselines/xml/FedRAMP_rev4_HIGH-baseline_profile.xml
-            media-type: application/oscal.catalog+xml
-          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev4/baselines/json/FedRAMP_rev4_HIGH-baseline_profile.json
-            media-type: application/oscal.catalog+json
-          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev4/baselines/yaml/FedRAMP_rev4_HIGH-baseline_profile.yaml
+          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_HIGH-baseline_profile.yaml
             media-type: application/oscal.catalog+yaml
