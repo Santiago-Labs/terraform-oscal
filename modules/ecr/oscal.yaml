@@ -8,7 +8,7 @@ component-definition:
     parties:
       - uuid: ee47836c-877c-4007-bbf3-c9d9bd805a9a
         type: organization
-        name: Test Vendor
+        name: AWS 
   components:
     - uuid: b036a6ac-6cff-4066-92bc-74ddfd9ad6fa
       type: software
@@ -24,7 +24,7 @@ component-definition:
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
           description: This is a partial implementation of the SP 800-53 rev5 catalog, focusing on the control enhancement CA-9.
           implemented-requirements:
-            - uuid:  
+            - uuid: e399d15b-7e4c-4f9a-84d7-6e7c8a10bad8
               control-id: ca-9 
               description: ECR repositories will have lifecycle policies configured
 
