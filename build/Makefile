@@ -109,7 +109,7 @@ clean-core-artifacts: ## Clean core OSCAL artifacts to convert content examples
 	$(MAKE) -C $(OSCAL_CORE_DIR) clean
 
 # The directory all content is sourced from
-SRC_DIR:=../src
+SRC_DIR:=../modules
 # The directory all content is written to (hint: override this to ..?)
 GEN_CONTENT_DIR:=generated
 
