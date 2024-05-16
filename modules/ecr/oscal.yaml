@@ -2,7 +2,7 @@ component-definition:
   uuid: 8223d65f-57a9-4689-8f06-2a975ae2ad72
   metadata:
     title: AWS Elastic Container Repository (ECR) Component Definition 
-    last-modified: "2024-05-10T11:55:41.655446-05:00"
+    last-modified: "2024-05-15T11:55:41.655446-05:00"
     version: "20231012"
     oscal-version: 1.1.2
     parties:
@@ -12,8 +12,9 @@ component-definition:
   components:
     - uuid: b036a6ac-6cff-4066-92bc-74ddfd9ad6fa
       type: software
-      title: ECR Component 
+      title: Elastic Container Registry (ECR) Component 
       description: This is an ECR repository for storing container images. ECR Repositories will have lifecycle policies configured
+      purpose: Elastic Container Registry is a managed AWS container image registry service. Images can be pulled and pushed via resource-based permissions using AWS IAM.
       responsible-roles:
         - role-id: provider
           party-uuids:
@@ -76,4 +77,10 @@ component-definition:
         description: FedRAMP Revision 5 High Baseline Profile
         rlinks:
           - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_HIGH-baseline_profile.yaml
+            media-type: application/oscal.catalog+yaml
+
+      - uuid: 0d32fa38-5370-4484-a5ae-ef29d82aae40
+        description: FedRAMP Revision 5 High Baseline Profile
+        rlinks:
+          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_MODERATE-baseline_profile.yaml
             media-type: application/oscal.catalog+yaml
