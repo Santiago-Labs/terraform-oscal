@@ -1,0 +1,95 @@
+component-definition:
+  uuid: 8223d65f-57a9-4689-8f06-2a975ae2ad72
+  metadata:
+    title: AWS Virtual Private Gateway (VPC) Component Definition 
+    last-modified: "2024-05-20T17:54:49.723888-05:00"
+    version: "20231012"
+    oscal-version: 1.1.2
+    parties:
+      - uuid: ee47836c-877c-4007-bbf3-c9d9bd805a9a
+        type: organization
+        name: Telophase 
+        links:
+          - href: "https://telophase.dev"
+            rel: website 
+
+  components:
+    - uuid: 66877aad-f7ed-493b-84ec-93d0b3fe825b
+      type: software
+      title: Virtual Private Network (VPC) Component 
+      description: A VPC is a virtual network that resembles a traditional network.
+      purpose: Virtual Private Network is used to logically divide a network into public and private subnets as well as corresponding routes based on IP based route tables.
+      responsible-roles:
+        - role-id: provider
+          party-uuids:
+            - ee47836c-877c-4007-bbf3-c9d9bd805a9a
+
+      control-implementations:
+        - uuid: cfcdd674-8595-4f98-a9d1-3ac70825c49f
+          source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
+          description: This is a partial implementation of the FedRAMP Revision 5 Moderate catalog.
+          implemented-requirements:
+            - uuid: e399d15b-7e4c-4f9a-84d7-6e7c8a10bad8
+              control-id: ac-21 
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic  
+
+            - uuid: e399d15b-7e4c-4f9a-84d7-6e7c8a10bad8
+              control-id: ac-3
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic  
+
+            - uuid: 465159ac-3063-40cb-bf84-3544164312ad
+              control-id: ac-4
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic
+
+            - uuid: a7412138-d22b-4cac-a66c-6443ee7e189d 
+              control-id: ac-4.21
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic 
+
+            - uuid: a064fc17-ace6-4d30-a337-7a5b2a5fbc5d
+              control-id: ac-6
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic 
+
+            - uuid: 8eccfacf-afec-41d2-a6d1-2641f0ea5cdf
+              control-id: sc-7 
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic 
+
+            - uuid: fd690bb5-4ba1-42de-ab24-1dc280215aff 
+              control-id: sc-7.3
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic 
+
+            - uuid: 8a7e6e3b-7970-43ff-8207-2cdf0387a378 
+              control-id: sc-7.4
+              description: >
+              Implement the Following:
+              - VPC subnets will not auto assign public IP addresses 
+              - VPC default security group does not allow inbound and outbound traffic 
+
+  back-matter:
+    resources:
+      - uuid: ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8
+        description: FedRAMP Revision 5 Moderate Baseline Profile
+        rlinks:
+          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_MODERATE-baseline_profile.yaml
+            media-type: application/oscal.catalog+yaml
+
