@@ -31,7 +31,7 @@ component-definition:
 
         - uuid: 22dbff65-9729-449f-9dfc-4e5fee0906de
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
-          description: This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement CM-2 (2).
+          description: This is a partial implementation of the FedRAMP Moderate profile, focusing on the control enhancement CM-2 (2).
           implemented-requirements:
             - uuid: 65e30b37-0640-4844-9f42-b2a7ae944bb1
               control-id: cm-2.2
@@ -40,7 +40,7 @@ component-definition:
           # Image scanning
         - uuid: 12932f63-8ccf-4f39-96ff-3df3bca84f4b 
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
-          description: This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement RA-5.
+          description: This is a partial implementation of the FedRAMP Moderate profile, focusing on the control enhancement RA-5.
           implemented-requirements:
             - uuid: 45301424-9457-4169-a78a-0d689a97715f 
               control-id: ra-5 
@@ -49,7 +49,7 @@ component-definition:
           # Tag Immutability
         - uuid: c7f1b7b9-3c15-4afa-9f43-7d30fa5d63d7 
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
-          description: This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement CA-9.
+          description: This is a partial implementation of the FedRAMP Moderate profile, focusing on the control enhancement CA-9.
           implemented-requirements:
             - uuid: b3194a0a-73b2-44ab-ae4f-82d6dda8504b
               control-id: ca-9 
@@ -57,7 +57,7 @@ component-definition:
 
         - uuid: e3deb395-22d8-4559-b76f-e32eff292e41
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
-          description: This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement CM-2.
+          description: This is a partial implementation of the FedRAMP Moderate profile, focusing on the control enhancement CM-2.
           implemented-requirements:
             - uuid: e5d5fd20-2331-45d0-b1ec-53a2fb0311ce
               control-id: cm-2 
@@ -65,7 +65,7 @@ component-definition:
 
         - uuid: fb09e689-cad3-464d-a569-15fd932849cd
           source: '#ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8'
-          description: This is a partial implementation of the FedRAMP High profile, focusing on the control enhancement CM-8 (1).
+          description: This is a partial implementation of the FedRAMP Moderate profile, focusing on the control enhancement CM-8 (1).
           implemented-requirements:
             - uuid: 9c696018-c6aa-4611-9d8f-da1738709573
               control-id: cm-8.1 
@@ -74,13 +74,8 @@ component-definition:
   back-matter:
     resources:
       - uuid: ec013e7d-e2a2-4ddb-a174-fbd9da24b0d8
-        description: FedRAMP Revision 5 High Baseline Profile
-        rlinks:
-          - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_HIGH-baseline_profile.yaml
-            media-type: application/oscal.catalog+yaml
-
-      - uuid: 0d32fa38-5370-4484-a5ae-ef29d82aae40
-        description: FedRAMP Revision 5 High Baseline Profile
+        description: FedRAMP Revision 5 Moderate Baseline Profile
         rlinks:
           - href: https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/rev5/baselines/yaml/FedRAMP_rev5_MODERATE-baseline_profile.yaml
             media-type: application/oscal.catalog+yaml
+
